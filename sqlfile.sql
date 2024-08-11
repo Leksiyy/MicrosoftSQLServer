@@ -1,7 +1,9 @@
 use master
 
 create database Academy
+
 use Academy
+
 create table Groups (
                         Id int identity (1,1) primary key, -- первичный ключ не может быть нулевым
                         Name nvarchar(10) not null unique check (len(name) > 0),
